@@ -1,0 +1,37 @@
+NAPOLI WEBSITE TEMPLATE — LICENSE
+Copyright (c) 2026 [Your Name / Studio]. All rights reserved.
+
+Thank you for your purchase. This license explains what you can and
+cannot do with this template.
+
+WHAT YOU CAN DO
+- Use this template to build ONE website (a "final product") — either
+  your own or one client's site per license purchased.
+- Modify the template freely: change colors, text, images, layout,
+  code — whatever you need.
+- Use it for a commercial project (a real business website).
+
+WHAT YOU CANNOT DO
+- Resell, redistribute, sublicense, or give away the template itself
+  (the source files), modified or not, as a template, theme, or
+  starter kit.
+- Include the template files in a product whose main value is the
+  template itself (for example, a template pack or builder).
+- Claim authorship of the original template design.
+
+MULTIPLE PROJECTS
+Each purchased license covers one final product. To build additional
+websites from this template, purchase one license per website.
+
+NO WARRANTY
+This template is provided "as is", without warranty of any kind. The
+author is not liable for any damages or losses arising from its use,
+including any downtime of a site built with it. You are responsible
+for hosting, backups, and maintenance of your final product.
+
+THIRD-PARTY ASSETS
+Fonts are loaded from Google Fonts under their own licenses. Demo
+photos are placeholders and are NOT included in the license — replace
+them with images you own or are licensed to use before publishing.
+
+Questions about this license: [your email]

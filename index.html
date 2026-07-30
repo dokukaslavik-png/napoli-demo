@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===================================================================
+     NAPOLI — wood-fired pizzeria HTML template (one file, any host)
+     Upload index.html to any host and the site works.
+     What to edit is marked with /* ... */ comments below.
+=================================================================== -->
+
+<title>NAPOLI — Wood-Fired Pizzeria</title>
+<meta name="description" content="Real Neapolitan pizza from a wood-fired oven. Fresh dough daily, family recipes, delivery & takeaway." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+<meta property="og:title" content="NAPOLI — Wood-Fired Pizzeria" />
+<meta property="og:description" content="Real Neapolitan pizza from a wood-fired oven." />
+<meta property="og:type" content="website" />
+</head>
+
+<body class="on-red">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="NAPOLI, home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#F4C542"/>
+        <path d="M20 6 L33 31 A28 28 0 0 1 7 31 Z" fill="#D83A2B"/>
+        <circle cx="16" cy="22" r="2.4" fill="#F4C542"/><circle cx="24" cy="20" r="2.4" fill="#F4C542"/><circle cx="20" cy="27" r="2.4" fill="#F4C542"/>
+      </svg>
+      NAPOLI
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main menu">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reserve">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#reserve" class="btn btn-solid">Order now</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="reveal">
+        <h1>Wood-fired<br>pizza, done<br><em>right</em></h1>
+        <p class="lead">Naples-style dough, a 450°C wood oven, and toppings we'd eat ourselves. Ninety seconds to the best slice in town.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-solid">See the menu</a>
+          <a href="#reserve" class="btn btn-ghost">Book a table</a>
+        </div>
+        <div class="hero-facts">
+          <div class="fact"><strong>90s</strong><span>in the oven</span></div>
+          <div class="fact"><strong>450°</strong><span>wood fire</span></div>
+          <div class="fact"><strong>2011</strong><span>since</span></div>
+        </div>
+      </div>
+
+      <!-- Signature: hand-drawn pizza -->
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="pizza-spin">
+          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="150" cy="150" r="146" fill="#FBF4E9"/>
+            <circle cx="150" cy="150" r="132" fill="#E7B75A"/>
+            <circle cx="150" cy="150" r="112" fill="#CE3A2A"/>
+            <!-- cheese blobs -->
+            <circle cx="120" cy="115" r="20" fill="#F6EAD0" opacity=".92"/>
+            <circle cx="188" cy="128" r="16" fill="#F6EAD0" opacity=".92"/>
+            <circle cx="150" cy="185" r="22" fill="#F6EAD0" opacity=".92"/>
+            <circle cx="105" cy="170" r="13" fill="#F6EAD0" opacity=".92"/>
+            <circle cx="196" cy="180" r="14" fill="#F6EAD0" opacity=".92"/>
+            <!-- pepperoni -->
+            <circle cx="150" cy="105" r="13" fill="#A02318"/>
+            <circle cx="110" cy="145" r="13" fill="#A02318"/>
+            <circle cx="192" cy="150" r="13" fill="#A02318"/>
+            <circle cx="135" cy="200" r="13" fill="#A02318"/>
+            <circle cx="180" cy="205" r="11" fill="#A02318"/>
+            <!-- basil -->
+            <ellipse cx="165" cy="150" rx="9" ry="15" fill="#4C7A34" transform="rotate(28 165 150)"/>
+            <ellipse cx="128" cy="120" rx="7" ry="12" fill="#4C7A34" transform="rotate(-20 128 120)"/>
+            <ellipse cx="150" cy="240" rx="7" ry="12" fill="#4C7A34" transform="rotate(10 150 240)"/>
+          </svg>
+        </div>
+        <div class="hot-tag">HOT<small>from the fire</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Wood-fired oven</span><span>Fresh dough daily</span><span>Neapolitan style</span><span>Family recipes</span><span>Delivery & takeaway</span>
+      <span>Wood-fired oven</span><span>Fresh dough daily</span><span>Neapolitan style</span><span>Family recipes</span><span>Delivery & takeaway</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about block wrap" id="about">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="eyebrow">Our story</span>
+        <h2>One oven, one<br><em>family</em>, real pizza</h2>
+        <p>NAPOLI started with a second-hand wood oven and a nonna's dough recipe. We still proof the dough 24 hours, still burn real oak, and still argue about the perfect crust.</p>
+        <p>No shortcuts, no frozen anything. Just fire, flour and the good stuff on top.</p>
+        <a href="#menu" class="btn btn-solid" style="margin-top:24px">See the menu</a>
+      </div>
+      <div class="about-media reveal">
+        <!-- IMAGE: replace src with your own (e.g. images/about.jpg) -->
+        <img src="images/about.jpg" alt="NAPOLI pizzeria" loading="lazy" onerror="this.style.display='none'">
+        <div class="years"><b>14</b><small>years wood-fired</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu block" id="menu">
+    <div class="wrap">
+      <div class="menu-head">
+        <div class="reveal">
+          <span class="eyebrow">Menu</span>
+          <h2>From the fire</h2>
+        </div>
+        <p class="menu-note reveal">Add-ons & gluten-free base available</p>
+      </div>
+      <div class="menu-tabs reveal" id="menuTabs" role="tablist"></div>
+      <div class="menu-list" id="menuList"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery block wrap" id="gallery">
+    <div class="reveal" style="text-align:center;margin-bottom:38px">
+      <span class="eyebrow center">Gallery</span>
+      <h2 style="font-size:clamp(2.2rem,4.6vw,3.6rem);margin-top:12px">Say cheese 🍕</h2>
+    </div>
+    <!-- GALLERY IMAGES: replace each src with your own photos -->
+    <div class="gallery-grid reveal">
+      <figure class="g-tall"><img src="images/gallery-1.jpg" alt="Pizza" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="g-wide"><img src="images/gallery-2.jpg" alt="Oven" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure><img src="images/gallery-3.jpg" alt="Dough" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure><img src="images/gallery-4.jpg" alt="Table" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="g-wide"><img src="images/gallery-5.jpg" alt="Interior" loading="lazy" onerror="this.style.display='none'"></figure>
+    </div>
+  </section>
+
+  <!-- ============ RESERVATION + CONTACT ============ -->
+  <section class="reserve block" id="reserve">
+    <div class="wrap reserve-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--gold)">Reservations</span>
+        <h2>Grab a <em>table</em></h2>
+        <p class="lead">Leave a request and we'll call you back to confirm. For delivery, add your address in the notes.</p>
+
+        <!-- FORM: sign up at formspree.io and paste your URL instead of YOUR_FORM_ID -->
+        <form class="form-card" id="bookForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="field-row">
+            <div class="field"><label for="bName">Name</label><input id="bName" name="name" type="text" placeholder="Your name" required></div>
+            <div class="field"><label for="bPhone">Phone</label><input id="bPhone" name="phone" type="tel" placeholder="Your phone number" required></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="bDate">Date</label><input id="bDate" name="date" type="date" required></div>
+            <div class="field"><label for="bTime">Time</label><input id="bTime" name="time" type="time" required></div>
+          </div>
+          <div class="field"><label for="bGuests">Guests</label><input id="bGuests" name="guests" type="number" min="1" max="20" value="2" required></div>
+          <div class="field"><label for="bNote">Notes</label><textarea id="bNote" name="note" rows="2" placeholder="Delivery address, allergies, high chair…"></textarea></div>
+          <button type="submit" class="btn btn-solid" style="width:100%">Send request</button>
+          <p class="form-note">By submitting, you agree to the processing of your contact details.</p>
+          <div class="form-ok" id="formOk">Grazie! We've got your request — we'll call you shortly 🍕</div>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--gold)">Contact</span>
+        <div class="info-list">
+          <!-- CONTACT: replace with your own details -->
+          <div class="info-row"><div class="ic">📍</div><div><b>1 Soborna St.</b><span>Vinnytsia, Ukraine</span></div></div>
+          <div class="info-row"><div class="ic">🕐</div><div><b>Mon–Sun · 11–23</b><span>Kitchen until 22:30 · delivery until 22:00</span></div></div>
+          <div class="info-row"><div class="ic">📞</div><div><b><a href="tel:+380000000000">+380 (00) 000-00-00</a></b><span>Orders & reservations</span></div></div>
+          <div class="info-row"><div class="ic">✉️</div><div><b><a href="mailto:ciao@napoli.pizza">ciao@napoli.pizza</a></b><span>Events & catering</span></div></div>
+        </div>
+        <!-- MAP: replace the address in q=... -->
+        <div class="map"><iframe title="Map" loading="lazy" src="https://www.google.com/maps?q=Vinnytsia+Soborna+1&output=embed"></iframe></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo">
+          <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#F4C542"/>
+            <path d="M20 6 L33 31 A28 28 0 0 1 7 31 Z" fill="#D83A2B"/>
+            <circle cx="16" cy="22" r="2.4" fill="#F4C542"/><circle cx="24" cy="20" r="2.4" fill="#F4C542"/><circle cx="20" cy="27" r="2.4" fill="#F4C542"/>
+          </svg>
+          NAPOLI
+        </span>
+        <p>Real Neapolitan pizza from a wood-fired oven. Fresh dough daily, family recipes, delivery & takeaway.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Telegram">TG</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pizzeria</h4>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reserve">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit us</h4>
+        <a href="#">1 Soborna St.</a>
+        <a href="tel:+380000000000">+380 (00) 000-00-00</a>
+        <a href="mailto:ciao@napoli.pizza">ciao@napoli.pizza</a>
+        <a href="#reserve">Order now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> NAPOLI. All rights reserved.</span>
+      <span>Wood-fired · Vinnytsia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
