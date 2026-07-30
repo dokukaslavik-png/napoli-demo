@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NAPOLI — Documentation</title>
+<style>
+  :root{--ink:#241612;--accent:#c0311f;--bg:#fbf4e9;--line:#e7d7be;--code:#f3e6ce}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+  .wrap{max-width:860px;margin:0 auto;padding:48px 24px}
+  header{border-bottom:2px solid var(--accent);padding-bottom:20px;margin-bottom:8px}
+  h1{font-size:2.1rem;margin:0 0 4px}
+  h2{font-size:1.35rem;margin:40px 0 12px;padding-top:16px;border-top:1px solid var(--line)}
+  p,li{color:#4a382e}
+  a{color:var(--accent)}
+  code{background:var(--code);padding:2px 6px;border-radius:4px;font-size:.92em}
+  pre{background:var(--code);padding:14px 16px;border-radius:8px;overflow:auto;font-size:.9em}
+  .muted{color:#7a6656;font-size:.95rem}
+  .toc a{display:block;padding:3px 0}
+  ul{padding-left:20px}
+  .box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:14px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>NAPOLI — Wood-Fired Pizzeria Template</h1>
+    <p class="muted">HTML / CSS / JavaScript template · Documentation v1.0</p>
+  </header>
+
+  <p>Thank you for purchasing NAPOLI. This guide explains how to set up and customize the template. If anything is unclear, feel free to reach out through my profile.</p>
+
+  <h2>Table of contents</h2>
+  <div class="toc">
+    <a href="#start">Getting started</a>
+    <a href="#files">File structure</a>
+    <a href="#colors">Changing colors</a>
+    <a href="#menu">Editing the menu</a>
+    <a href="#images">Replacing images</a>
+    <a href="#fonts">Fonts</a>
+    <a href="#form">Reservation form</a>
+    <a href="#contact">Contacts &amp; map</a>
+    <a href="#credits">Credits</a>
+    <a href="#changelog">Changelog</a>
+  </div>
+
+  <h2 id="start">Getting started</h2>
+  <p>This is a static HTML template — no build tools, no database, no server-side code.</p>
+  <ul>
+    <li>Open <code>index.html</code> in any browser to preview it locally.</li>
+    <li>To publish, upload all files to any web host (shared hosting via FTP, Netlify, GitHub Pages, etc.). Keep the folder structure intact.</li>
+  </ul>
+
+  <h2 id="files">File structure</h2>
+  <pre>napoli/
+├── index.html          Main page
+├── 404.html            Error page
+├── css/
+│   └── style.css       All styles
+├── js/
+│   └── main.js         Menu rendering, nav, form, animations
+├── images/             Images + favicon
+└── documentation/      This guide</pre>
+  <div class="box"><strong>Note:</strong> the spinning pizza in the hero is a hand-drawn SVG (no image needed). Photos are used in the “About” and “Gallery” sections only.</div>
+
+  <h2 id="colors">Changing colors</h2>
+  <p>All colors live at the top of <code>css/style.css</code>, inside <code>:root { }</code>:</p>
+  <pre>--paper: #FBF4E9;   /* page background */
+--ink:   #241612;   /* main text */
+--red:   #D83A2B;   /* brand: hero, buttons, prices */
+--gold:  #F4C542;   /* highlight */
+--green: #4C7A34;   /* basil accent (tags) */</pre>
+  <p>Change a value and the whole site updates.</p>
+
+  <h2 id="menu">Editing the menu</h2>
+  <p>The menu is a simple list — no coding needed. Open <code>js/main.js</code> and find the <code>MENU</code> block near the top. Each item is one line:</p>
+  <pre>{ name:'Margherita', desc:'Tomato, mozzarella, basil', price:12 },</pre>
+  <p>Add or remove lines and categories freely. <code>tag</code> is optional and can be <code>'spicy'</code>, <code>'veg'</code> or <code>'chef'</code> (each shows a colored label). Change the currency with the <code>CURRENCY</code> variable.</p>
+
+  <h2 id="images">Replacing images</h2>
+  <p>Placeholder images are in the <code>images/</code> folder (<code>about.jpg</code>, <code>gallery-1.jpg</code> … <code>gallery-5.jpg</code>). Replace them with your own photos using the same file names, or update the <code>src</code> paths in <code>index.html</code>.</p>
+  <div class="box"><strong>Tip:</strong> free, commercial-use photos are available at <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> and <a href="https://pexels.com" target="_blank" rel="noopener">Pexels</a>. Use your own images or properly licensed ones before publishing.</div>
+
+  <h2 id="fonts">Fonts</h2>
+  <p>Two Google Fonts, loaded via a link in the <code>&lt;head&gt;</code>: <strong>Anton</strong> (headings) and <strong>Manrope</strong> (body). To change them, swap the Google Fonts link and update <code>--font-display</code> / <code>--font-body</code> in <code>style.css</code>.</p>
+
+  <h2 id="form">Reservation form</h2>
+  <p>The booking form works with the free <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> service (no backend needed):</p>
+  <ul>
+    <li>Create a free Formspree account and a new form.</li>
+    <li>Copy your form URL (looks like <code>https://formspree.io/f/abc123</code>).</li>
+    <li>In <code>index.html</code>, replace <code>YOUR_FORM_ID</code> in the form's <code>action</code> attribute with your URL.</li>
+  </ul>
+
+  <h2 id="contact">Contacts &amp; map</h2>
+  <p>Edit the address, hours, phone and email in the “Contact” block of <code>index.html</code>. For the map, replace <code>?q=Vinnytsia+Soborna+1</code> in the map <code>iframe</code> URL with your own address.</p>
+
+  <h2 id="credits">Credits &amp; third-party resources</h2>
+  <ul>
+    <li>Fonts: <a href="https://fonts.google.com/specimen/Anton" target="_blank" rel="noopener">Anton</a> &amp; <a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener">Manrope</a> — Google Fonts (Open Font License).</li>
+    <li>Demo photos: placeholders only. Not included for redistribution — replace with your own or free-licensed images (Unsplash, Pexels).</li>
+    <li>No external frameworks — pure HTML, CSS and vanilla JavaScript.</li>
+  </ul>
+
+  <h2 id="changelog">Changelog</h2>
+  <pre>v1.0 — Initial release</pre>
+
+  <p class="muted" style="margin-top:40px">Thanks again for your purchase. Enjoy building with NAPOLI.</p>
+</div>
+</body>
+</html>
